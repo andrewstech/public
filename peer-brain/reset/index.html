@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    
+    <meta charset="utf-8">
+    <title>PeerBrain</title>
+    <meta name="viewport" content="width=device-width, initial-scale=2.0, user-scalable=0, minimal-ui">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+
+    <link rel="stylesheet" href="https://appsrv1-147a1.kxcdn.com/dattaable/plugins/animation/css/animate.min.css">
+    <!-- vendor css -->
+    <link rel="stylesheet" href="https://appsrv1-147a1.kxcdn.com/dattaable/css/style.css">
+
+    <!-- Specific CSS goes HERE -->
+    <style>
+        div.containers {
+        background-color: #ffffff;
+        }
+        div.containers p {
+        font-family: Cursive;
+        font-size: 14px;
+        font-style: normal;
+        font-weight: bold;
+        text-decoration: none;
+        text-transform: none;
+        color: #000000;
+        background-color: #ffffff;
+        }
+        .disabled {
+          pointer-events: none;
+          cursor: default;
+        }
+        a.large {
+        font-size: 2.875em;
+        }
+        </style>
+    
+
+</head>
+
+<body>
+    
+       
+    <div class="auth-wrapper">
+        <div class="auth-content">
+            <div class="auth-bg">
+                <span class="r"></span>
+                <span class="r s"></span>
+                <span class="r s"></span>
+                <span class="r"></span>
+            </div>
+            <div class="card">
+                <div class="card-body text-center">
+                    <p class="mb-0 text-muted disabled"><a href="" class="large">Peer Brain</a></p>
+					<div>
+                        <p class="mb-0 text-muted disabled"><a href="" disabled>Password Reset</a></p>
+                            <form action="/{RESET_PASSWORD_ROUTE}/submit" method="post">
+                                <input type= "hidden" id = "username" name = "username" value = "{username}">
+                                <input type= "hidden" id = "token" name = "token" value = "{token}">
+                                <label for="fname">New Password:</label><br>
+                                <input type="password" id="new_password" name="new_password" minlength="8" required><br>
+                                <label for="lname">Confirm Password:</label><br>
+                                <input type="password" id="confirm_password" name="confirm_password" minlength="8" required><br><br>
+                                <input type="submit" value="Submit">
+                              </form> 
+					</div>
+
+                    <br />
+                    <br />
+
+                    
+
+                    <p class="mb-0 text-muted"> <a href="https://github.com/shandralor/PeerBrain" >GitHub</a></p>
+                    <br />
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+    
+    <!-- Required Js -->
+    
+    <!-- Specific Page JS goes HERE  -->
+        
+
+</body>
+</html>
