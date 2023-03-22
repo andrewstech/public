@@ -8,7 +8,7 @@ const $form = document.getElementById('data-form');
 // and show an error message
 $form.addEventListener('submit', async (e) => {
   e.preventDefault();
-  const password = document.getElementById('password').value;
+  const password = document.getElementById('new_password').value;
   const passwordDigest = await digestMessage(password)
   
   const checkDigest = passwordDigest.substring(5, 41).toUpperCase();
@@ -22,7 +22,7 @@ $form.addEventListener('submit', async (e) => {
   if (isPwned) {
     document.getElementById('password-error').classList.remove('hidden');
     document.getElementById('password-ok').classList.add('hidden');
-    document.getElementById('password').classList.add('error');    
+    document.getElementById('new_password').classList.add('error');    
     return false;
   } else {
     document.getElementById('password-ok').classList.remove('hidden');
